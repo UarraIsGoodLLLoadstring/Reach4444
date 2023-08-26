@@ -1,0 +1,25 @@
+local function onKeyPress(input)
+      
+    if input.KeyCode == Enum.KeyCode.E then
+     local player = game.Players.LocalPlayer
+     player.Backpack.Classic.Name = "DICUDEDCYKCSCAQK923Wecwyk"
+     player.Backpack.DICUDEDCYKCSCAQK923Wecwyk.Handle.Transparency = 1
+     wait(0.333)
+     player.Backpack.DICUDEDCYKCSCAQK923Wecwyk.Handle.Size = Vector3.new(555,555,555)
+end
+end
+
+game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
+
+local Screen = Instance.new("ScreenGui")
+Screen.Parent = game.CoreGui
+local TextButod = Instance.new("TextButton")
+TextButod.TextScaled = true
+TextButod.Text = "Press Here Or Keyboard E for reach activated And Dont Equip The Sword While Getting Reach!"
+TextButod.Position = UDim2.new(0.006, 0,0.925, 0)
+TextButod.Size = UDim2.new(0, 200,0, 31)
+TextButod.Parent = Screen
+TextButod.MouseButton1Click:Connect(function()
+  local player2 = game.Players.LocalPlayer
+     player2.Backpack.DICUDEDCYKCSCAQK923Wecwyk.Handle.Size = Vector3.new(555,555,555)
+end)
